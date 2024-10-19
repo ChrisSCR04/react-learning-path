@@ -1,0 +1,160 @@
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    flex-wrap: wrap;
+    
+  }
+  
+  .filters button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: #646cff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.25s;   
+
+  
+  }
+  .filters svg {
+    margin-right: 0.5rem;
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+  }
+
+  .filters__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    margin: 1rem 1rem;
+
+    border-radius: .25rem;
+    background-color:  #303030;
+    backdrop-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+  }
+
+    .filters__container-price, .filters__container-category, .filters__container-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 1rem;
+  }
+
+  .filters__container-price input{
+    width: 4rem;
+  }
+
+  .filters__container-items select{
+    width: 3rem;
+  }
+
+  .filters__container-price-min-value, .filters__container-price-max-value{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+      
+  }
+ 
+  form input {
+    font-size: 30px;
+    padding: 0;
+    border: 2px solid #ccc;
+    border-left: 0;
+    width: 100%;
+    color: #999;
+    border-radius: 0 7px 7px 0;
+    
+
+
+}
+
+form input:focus{
+    outline: 0;
+}
+
+.filters__container > label{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+    
+    font-size: 18px;
+    font-weight: bold;
+    
+    
+
+    
+}
+.flex {
+    display: flex;
+    justify-content: flex-start;
+}
+.flex input {
+    max-width: 300px;
+    flex: 1 1 300px;
+    font-size: 1rem;
+    
+}
+.flex .currency {
+    font-size: 1rem;
+    padding: 0 1rem 0 1rem;
+    color: #fff;
+    border: 2px solid #ccc;
+    border-right: 0;
+
+    border-radius: 0.5rem 0 0 0.5rem;
+ 
+
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .filters__container {
+    flex-direction: column;
+    
+  }
+
+  .filters__container-price-label, .filters__container-category-label, .filters__container-items-label, .row {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filters__container-price, .filters__container-category {
+    max-width: 90vw;
+  }
+  
+  .filters__container-price-values {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .filters__container-price-min-value, .filters__container-price-max-value{
+    display: flex;
+    flex-direction:row;
+    gap: 0.5rem;
+  }
+}
+

@@ -1,0 +1,175 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 0 1em 0;
+    
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .movies {
+    list-style: none;
+    margin: 3em 4em 0 3em; 
+    padding: 0;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+   
+    width: 100%;
+    gap: 2em;
+  }
+  
+  .movie {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    max-width: 300px;
+    
+    margin: 2em 0 4em 0;
+  }
+
+  .banner__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .banner__container h3 {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  
+  .banner__container p {
+    margin: 0;
+    font-size: 12px;
+    display: flex;
+    text-align: end;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .movie h3, .movie p {
+    margin: 0;
+    min-height: 4em;
+
+  }
+  .movie .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+    background: rgb(41, 41, 41);
+    height: 100%;
+    min-width: 100%;
+    min-height: 400px;
+  }
+  .movie .image img {
+
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 425px){
+    header h1 {
+      width: 100%;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 6em;
+    }
+    header p {
+      width: 100%;
+      font-size: 12px;
+      text-align: center;}
+    form {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    form .search__input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      
+
+    }
+
+    
+
+    .checkbox__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 1em 0;
+    }
+
+    form .submit__button {
+      width: 100%;
+      flex-direction: row;
+      margin: 0 0 1em 0;
+    }
+
+    form .checkbox__input, form .checkbox__label{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 12px;
+    }
+    .movie .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      border-radius: 0.5em;
+  
+      background: none;
+      min-height: 0px;
+    }
+    .movie h3, .movie p {
+      min-height: 0;
+    }
+    .movie {
+      margin: 1em 0 1em 0;
+    }
+  }
