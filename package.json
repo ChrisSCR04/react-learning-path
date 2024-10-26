@@ -18,7 +18,7 @@
   "license": "ISC",
   "homepage": "https://github.com/chrisscr04/react-learning-path#readme",
   "devDependencies": {
-    "standard": "^17.1.0"
+    "standard": "^17.1.2"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
